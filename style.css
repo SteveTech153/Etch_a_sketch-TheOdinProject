@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+.bg{
+    background: url('brick-wall.jpg');
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    width: 100%; 
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+h1{
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+    filter: blur(2px);
+    -webkit-filter: blur(1px);
+}
+h1:hover{
+    text-shadow: 0 0 10px  rgba(255, 255, 255, 0.5);
+}
+
+.div1{
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* margin-top: 100px; */
+}
+.container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 36vw;
+    height: 36vw;
+}
+.container > .square{
+    border: 1px solid rgb(0, 0, 0);
+    width: 2.25vw;
+    height: 2.25vw;
+    filter: blur(1px);
+    -webkit-filter: blur(1.x);
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin-left: auto;   
+    z-index: 1;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vw;
+    width: 10vw;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+}
+
+input[type='color'] {
+    width: 5vw;
+    height: 5vw;
+    padding: 0;
+    border: 5px solid #fff;
+    cursor: pointer;
+    outline: none;
+    box-shadow:  0 0 5px 0 rgba(255, 254, 254, 0.5);
+    z-index: 1;
+}
+#color::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+#color::-webkit-color-swatch {
+    border: none;
+}
+.colorpick-eyedropper-input-trigger{
+    height: 2vw;
+    width: 2vw;
+    box-shadow: 0 0 5px 0 rgba(255, 254, 254, 0.2);
+    z-index: 1;
+}
+.resize{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+/* #resize-btn{
+    width: 80%;
+    margin: 1vw auto;
+    height: 3vw;
+    
+} */
+#clear-btn{
+    width: 80%;
+    margin: 1vw auto;
+    height: 3vw;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px; 
+    font-size: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 0 5px 0 rgba(255, 254, 254, 0.2);
+    z-index: 1;
+}
+#clear-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(192, 192, 192);
+    border: 1px solid rgb(192, 192, 192);
+    z-index: 1;
+}
+input[type='range']{
+    width: 100%;
+    margin: 1vw auto;
+    height: 3vw;
+    z-index: 1;
+}
+#random-btn{
+    width: 80%;
+    margin: 1vw auto;
+    height: 3vw;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+    border: 1px solid rgb(255, 255, 255);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    font-weight: 900;
+    border-radius: 5px; 
+    font-size: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 0 5px 0 rgba(255, 254, 254, 0.2);
+    z-index: 1;
+}
