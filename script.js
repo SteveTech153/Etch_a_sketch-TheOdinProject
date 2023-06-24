@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let rand = false;
     let prevColor;
     let size = 4;
-    //let colorpicker = document.querySelector('.colorpick-eyedropper-input-trigger');
+    let colorpicker = document.querySelector('.colorpick-eyedropper-input-trigger');
+    
     let keyDown = false;
     const clear = document.querySelector('#clear-btn');
     let randBtn = document.querySelector('#random-btn');
