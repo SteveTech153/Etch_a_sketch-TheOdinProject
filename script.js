@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function colorPickFun() {
         rand = false;
         colorpick.style.border = '5px solid #fff';
+        colorpick.style.boxShadow = '2px 2px 10px gold';
+        randBtn.style.boxShadow = 'none';
         randBtn.style.border = 'none';
         color = prevColor;
     }
@@ -74,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
     randBtn.addEventListener('click', () => {
         rand = true;
         randBtn.style.border = '5px solid #fff'
+        randBtn.style.boxShadow = '2px 2px 10px gold';
+        colorpick.style.boxShadow = 'none';
         colorpick.style.border = 'none';
         prevColor = color;
     }
